@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 28, 2023 at 02:14 PM
+-- Generation Time: Mar 10, 2023 at 06:31 AM
 -- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -111,7 +111,9 @@ INSERT INTO `reservation` (`id_res`, `id_user`, `id_din`, `people_sum_res`, `sta
 (9, 2, 4, 3, 3, '2023-01-25 17:52:37', '2023-02-01', '19:54:00', '2023-01-26 00:52:37', '21:54:00'),
 (10, 2, 5, 2, 0, '2023-01-25 18:15:55', '2023-01-26', '10:00:00', '2023-01-26 00:52:37', '11:00:00'),
 (11, 2, 4, 1, 0, '2023-01-25 18:16:11', '2023-01-27', '10:00:00', '2023-01-26 00:52:37', '11:00:00'),
-(12, 2, 5, 8, 3, '2023-01-26 03:28:57', '2023-01-26', '10:26:00', '2023-01-26 10:28:57', '12:26:00');
+(12, 2, 5, 8, 3, '2023-01-26 03:28:57', '2023-01-26', '10:26:00', '2023-01-26 10:28:57', '12:26:00'),
+(13, 2, 5, 3, 3, '2023-03-10 05:09:56', '2023-03-10', '15:09:00', '2023-03-10 12:09:56', '17:09:00'),
+(14, 2, 4, 5, 3, '2023-03-10 05:21:46', '2023-03-17', '16:10:00', '2023-03-10 12:21:46', '18:10:00');
 
 -- --------------------------------------------------------
 
@@ -137,10 +139,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `codeID`, `name`, `phone`, `email`, `username`, `pass`, `rold`, `status`, `dateTime`) VALUES
-(1, '1339900662224', 'employee', '0961632545', 'employee@gmail.com', 'employee', 'employee', 2, 1, '2023-01-25 09:14:44'),
-(2, '1339900662223', 'users2', '0961632546', 'users4@gmail.com', 'users', 'users', 1, 1, '2023-01-25 06:35:28'),
+(1, '1339900662224', 'employee', '0961632545', 'employee@gmail.com', 'employee1', 'employee1', 2, 1, '2023-03-10 05:29:44'),
+(2, '1339900662223', 'users2', '0961632546', 'users4@gmail.com', 'users', 'users', 1, 1, '2023-03-10 05:14:32'),
 (3, '1339900662222', 'users1', '0961632545', 'users1@gmail.com', 'users1', 'users1', 1, 1, '2023-01-25 04:54:49'),
-(10, '1339900662224', 'admin', '0961632545', 'admin@gmail.com', 'admin', 'admin', 0, 1, '2023-01-26 03:55:29');
+(10, '1339900662226', 'admin', '0961632545', 'admin@gmail.com', 'admin', 'admin', 2, 1, '2023-03-10 05:29:32');
 
 --
 -- Indexes for dumped tables
@@ -192,7 +194,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `id_res` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_res` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `users`
