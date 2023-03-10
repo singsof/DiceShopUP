@@ -1,0 +1,26 @@
+{
+    "name": "diceshop",
+    "version": "1.0.0",
+    "description": "ร้านลูกเต๋ายโสธร",
+    "bugs": {
+        "url": "https://github.com/singsof/diceshop/issues"
+    },
+    "homepage": "https://github.com/singsof/diceshop#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/singsof/diceshop.git"
+    },
+    "main": "index.php",
+    "scripts": {
+        "scss": "node-sass  scss/style.scss -o assets/css/",
+        "scss-w": "node-sass -w scss/style.scss -o assets/css"
+    },
+    "keywords": [
+        "diceshop"
+    ],
+    "author": "M2Soft",
+    "license": "MIT",
+    "dependencies": {
+        "node-sass": "^8.0.0"
+    }
+}

@@ -1,0 +1,56 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+Template Name: Constra - Construction Html5 Template
+Description: Constra - Construction Html5 Template
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+
+// #0d3b66 #f4d35e #ee964b #f95738
+$colou_main: #f95738;
+$colou_fff: #fff;
+
+$color-primary: #ee964b;
+$background-navigation: #0d3b66;
+
+$theme-colors: (
+    "primary": #ee964b,
+    "danger": #ff4136,
+);
+
+@import "./bootstrap/bootstrap.scss";
+@import "mixins";
+@import "variables";
+@import "typography";
+@import "common";
+@import "buttons";
+@import "templates/navigation";
+@import "templates/main";
+
+#script-warning {
+    display: none;
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    padding: 0 10px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: red;
+}
+
+#loading {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 10px;
+}

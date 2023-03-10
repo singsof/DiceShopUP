@@ -1,0 +1,12 @@
+.fiveserverrc.json
+{
+    "port": 8086,
+    "host": "localhost",
+    "browser" : "chrome",
+    "highlight": true,
+    "injectBody": true,
+    "remoteLogs": true,
+    "injectCss": false,
+    "navigate": true,
+    "https": true
+}
